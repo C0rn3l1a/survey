@@ -1,0 +1,9 @@
+services:
+  web:
+    container_name: fullstack-axum-yew
+    image: fullstack-axum-leptos:latest
+    env_file:
+      - ./backend/.env
+      - ./frontend/.env
+    ports:
+      - "3000:3000"
